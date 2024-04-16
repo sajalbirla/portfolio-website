@@ -27,7 +27,7 @@ const Header = () => {
     // document.body.appendChild(link);
     // link.click();
     // document.body.removeChild(link);
-    window.location.href = "/Resume_Sajal_Birla_Developer.pdf";
+    window.location.href = "/portfolio-website/Resume_Sajal_Birla_Developer.pdf";
   };
   return (
     <>
