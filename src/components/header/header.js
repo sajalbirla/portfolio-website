@@ -20,13 +20,14 @@ const Header = () => {
     setActiveTab(val);
   };
   const DownloadResume = () => {
-    const pdfUrl = "/Resume_Sajal_Birla_Developer.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Resume_Sajal_Birla_Developer.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const pdfUrl = "/Resume_Sajal_Birla_Developer.pdf";
+    // const link = document.createElement("a");
+    // link.href = pdfUrl;
+    // link.download = "Resume_Sajal_Birla_Developer.pdf"; // specify the filename
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+    window.location.href = "/Resume_Sajal_Birla_Developer.pdf";
   };
   return (
     <>
