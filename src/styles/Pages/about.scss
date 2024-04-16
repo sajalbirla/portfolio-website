@@ -1,0 +1,27 @@
+.about {
+  // max-width: 1250px;
+  // margin: auto;
+  // background-color: rgb(255, 255, 255);
+  // padding: 1rem;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &-details {
+    // background-color: antiquewhite;
+    &-tag {
+      font-size: 20px;
+      margin-right: 0.5rem;
+    }
+    &-name {
+      font-family: "Roboto Mono", monospace;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    &-role {
+      font-family: "Roboto Mono", monospace;
+      margin: 1rem 0;
+      font-size: 20px;
+    }
+  }
+}

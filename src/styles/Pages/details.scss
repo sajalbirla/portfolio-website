@@ -1,0 +1,35 @@
+.details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  &-image {
+    max-width: 25%;
+    width: 25%;
+    max-height: 25%;
+    overflow: hidden;
+    img {
+      border-radius: 20px;
+      width: 80%;
+      height: auto;
+    }
+  }
+  &-description {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 75%;
+    height: 25%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    &-header {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    &-content {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+}
