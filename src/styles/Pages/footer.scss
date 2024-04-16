@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-note {
+    margin: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: $text-color;
+  }
+}

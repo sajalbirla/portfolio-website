@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-icon {
+    border: 1px solid #e2cefd;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      svg {
+        color: #000000;
+      }
+    }
+  }
+}
