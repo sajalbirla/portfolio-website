@@ -6,4 +6,6 @@ export class Urlconfig {
   static WhatsappMe = "https://www.linkedin.com/in/sajalbirla/";
   static Email = "sajalbirla71@gmail.com";
   static GitHubUrl = "";
+  static ContactDetails = 6377734843;
+  static Location = "Gurugram, haryana";
 }

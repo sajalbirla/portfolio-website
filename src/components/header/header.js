@@ -1,33 +1,33 @@
 import React, { useState } from "react";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const Header = () => {
   const headeroptions = [
     {
       id: 1,
-      Name: "About",
+      Name: "about",
     },
     {
       id: 2,
-      Name: "Portfolio",
+      Name: "portfolio",
     },
     {
       id: 3,
-      Name: "Contact",
+      Name: "contact",
     },
   ];
-  const [activeTab, setActiveTab] = useState("About");
+  const [activeTab, setActiveTab] = useState("about");
   const activeTabHandler = (val) => {
+    window.location.href = `#${val}`;
     setActiveTab(val);
   };
   const DownloadResume = () => {
-    const pdfUrl = "/Resume_Sajal_Birla_Developer.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Resume_Sajal_Birla_Developer.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.location.href =
+      "/portfolio-website/Resume_Sajal_Birla_Developer.pdf";
   };
+
+  const DarkModeHandler = () => {};
+
   return (
     <>
       <div className="header">
@@ -48,8 +48,9 @@ const Header = () => {
           ))}
         </div>
         <button className="header-button" onClick={DownloadResume}>
-          Resume
+          <DownloadIcon /> Resume 
         </button>
+        {/* <button onClick={DarkModeHandler}>Dark Mode</button> */}
       </div>
     </>
   );

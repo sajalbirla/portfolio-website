@@ -10,25 +10,27 @@
     display: flex;
     justify-content: space-around;
     width: 30%;
-    color: #484a4d;
+    color: #ff3333;
     cursor: pointer;
     &-options {
       color: #c6c6c8;
       font-size: 18px;
       font-family: "Tilt Neon", sans-serif;
       &-active {
-        color: #ffffff;
+        color: #000000;
       }
       &:hover {
-        color: #ffffff;
+        color: #000000;
       }
     }
   }
   &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 50px;
     padding: 10px;
-    height: 35px;
     cursor: pointer;
   }
 }

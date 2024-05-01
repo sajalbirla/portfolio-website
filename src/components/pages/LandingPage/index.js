@@ -10,14 +10,14 @@ import Experience from "../../content/experience/experience";
 const LandingPage = () => {
   return (
     <>
-      <Header />
       <MainLayout>
+        <Header />
         <AboutMe />
         <Details />
         <MySkills />
         <Experience />
+        <Footer />
       </MainLayout>
-      <Footer />
     </>
   );
 };

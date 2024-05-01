@@ -3,11 +3,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 3rem 0;
+  &-intro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &-section {
+      &-1 {
+        padding: 1rem;
+        width: 50%;
+        &-header {
+          font-size: 25px;
+        }
+        &-description {
+          font-size: 20px;
+        }
+        &-contact {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem 0;
+          &-details {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            width: max-content;
+          }
+        }
+      }
+      &-2 {
+        width: 50%;
+      }
+    }
+  }
   &-note {
     margin: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 24px;
     color: $text-color;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-wrap: wrap;
+    &-intro {
+      width: 100%;
+      &-section {
+        &-1 {
+          padding: 1rem;
+          width: 100%;
+        }
+        // &-2 {
+        //   width: 90%;
+        // }
+      }
+    }
   }
 }
