@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import logo from "../assets/logo.png";
 import ThemeToggle from "../common/theme-toggle/ThemeToggle";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Header = () => {
+  const { theme } = useContext(ThemeContext);
   const headeroptions = [
     {
       id: "about",
@@ -27,7 +29,7 @@ const Header = () => {
     <div className="header">
       <div className="header-logo">
         <span class="header-logo-text">&lt;</span>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className={`logo ${theme}`} />
         <span class="header-logo-text">/&gt;</span>
       </div>
       <div className="header-bar">

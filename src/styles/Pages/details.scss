@@ -13,6 +13,16 @@
       width: 80%;
       height: auto;
     }
+
+    .image-container {
+      border-radius: 20px;
+      display: inline-block;
+
+      &.dark img {
+        background-color: #ffffff;
+        display: block;
+      }
+    }
   }
   &-description {
     border: 1px solid var(--text-color);

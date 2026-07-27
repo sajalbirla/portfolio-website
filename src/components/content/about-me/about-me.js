@@ -1,9 +1,11 @@
-import React from "react";
-import SelfMemoji from "../../assets/memoji_self.jpeg";
+import React, { useContext } from "react";
+import SelfMemoji from "../../assets/memoji_self.png";
 import { Urlconfig } from "../../../constant/config";
+import { ThemeContext } from "../../../context/ThemeContext";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const AboutMe = () => {
+  const { theme } = useContext(ThemeContext);
   const DownloadResume = () => {
     // Track event in Google Analytics
     window.gtag('event', 'resume_click');
@@ -28,7 +30,9 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="about-details-image">
-        <img src={SelfMemoji} alt="Sajal Birla" />
+        <div className={`image-container ${theme}`}>
+          <img src={SelfMemoji} alt="Sajal Birla" />
+        </div>
       </div>
     </div>
   );
